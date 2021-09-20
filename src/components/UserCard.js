@@ -1,13 +1,13 @@
 import React from 'react'
 
-const DisplayUsers = ({user}) => {
+const UserCard = (user) => {
     return (
         <div>
-            <h1>Name</h1>
-            <h2>Campus</h2>
-            <p>Description</p>
+            <h1>{user.first_name}</h1>
+            <h2>{user.state}</h2>
+            <p>{user.city}</p>
         </div>
     )
 }
 
-export default DisplayUsers
+export default UserCard
